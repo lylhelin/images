@@ -1,0 +1,171 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#991B1B"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#475569"/>
+    </marker>
+
+    <style>
+      .title { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-size: 34px; font-weight: 800; fill: #0F172A; }
+      .subtitle { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-size: 16px; fill: #475569; }
+      .box-title { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-size: 21px; font-weight: 800; fill: #FFFFFF; }
+      .box-text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-size: 15px; fill: #F8FAFC; }
+      .dark-title { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-size: 20px; font-weight: 800; fill: #0F172A; }
+      .dark-text { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-size: 15px; fill: #334155; }
+      .small { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-size: 13px; fill: #64748B; }
+      .tag { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #FFFFFF; }
+      .line { stroke: #475569; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #94A3B8; stroke-width: 2; stroke-dasharray: 7 7; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="600" y="56" text-anchor="middle" class="title">价值投资决策地图</text>
+  <text x="600" y="88" text-anchor="middle" class="subtitle">不是看消息好不好，而是看价格贵不贵；不是追逐共识，而是等待市场犯错</text>
+
+  <!-- Center core -->
+  <g filter="url(#shadow)">
+    <circle cx="600" cy="405" r="116" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="600" cy="405" r="96" fill="#0F172A"/>
+    <text x="600" y="380" text-anchor="middle" class="box-title">核心原则</text>
+    <text x="600" y="412" text-anchor="middle" class="box-text">价格 &lt; 价值</text>
+    <text x="600" y="440" text-anchor="middle" class="box-text">并留有安全边际</text>
+  </g>
+
+  <!-- Top left: first vs second thinking -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="135" width="300" height="180" rx="22" fill="url(#blue)"/>
+    <text x="220" y="175" text-anchor="middle" class="box-title">第二层思维</text>
+    <text x="100" y="215" class="box-text">第一层：业绩好 → 买</text>
+    <text x="100" y="245" class="box-text">第二层：是否超预期？</text>
+    <text x="100" y="275" class="box-text">价格是否已透支利好？</text>
+    <text x="100" y="305" class="box-text">共识是否已经过度拥挤？</text>
+  </g>
+
+  <!-- Top right: market -->
+  <g filter="url(#shadow)">
+    <rect x="830" y="135" width="300" height="180" rx="22" fill="url(#orange)"/>
+    <text x="980" y="175" text-anchor="middle" class="box-title">市场像钟摆</text>
+    <text x="860" y="215" class="box-text">大部分时间较有效</text>
+    <text x="860" y="245" class="box-text">极端时因人性犯错</text>
+    <text x="860" y="275" class="box-text">贪婪：高价低回报</text>
+    <text x="860" y="305" class="box-text">恐惧：低价好机会</text>
+  </g>
+
+  <!-- Middle left: intrinsic value -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="520" width="300" height="180" rx="22" fill="url(#green)"/>
+    <text x="220" y="560" text-anchor="middle" class="box-title">内在价值</text>
+    <text x="100" y="600" class="box-text">价值来自未来现金流</text>
+    <text x="100" y="630" class="box-text">好公司 ≠ 好投资</text>
+    <text x="100" y="660" class="box-text">买入价格决定收益</text>
+    <text x="100" y="690" class="box-text">模糊正确胜过精确错误</text>
+  </g>
+
+  <!-- Middle right: risk -->
+  <g filter="url(#shadow)">
+    <rect x="830" y="520" width="300" height="180" rx="22" fill="url(#red)"/>
+    <text x="980" y="560" text-anchor="middle" class="box-title">风险控制</text>
+    <text x="860" y="600" class="box-text">风险不是波动</text>
+    <text x="860" y="630" class="box-text">而是本金永久性损失</text>
+    <text x="860" y="660" class="box-text">不加杠杆，不满仓赌命</text>
+    <text x="860" y="690" class="box-text">先活下来，再谈复利</text>
+  </g>
+
+  <!-- Bottom center: action flow -->
+  <g filter="url(#shadow)">
+    <rect x="405" y="650" width="390" height="115" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="600" y="685" text-anchor="middle" class="dark-title">行动闭环</text>
+    <text x="435" y="720" class="dark-text">筛选能力圈 → 估值 → 等待 → 出击 → 坐住</text>
+    <text x="435" y="748" class="small">99%时间保持耐心，1%机会用盆去接</text>
+  </g>
+
+  <!-- Top center: safety margin -->
+  <g filter="url(#shadow)">
+    <rect x="405" y="135" width="390" height="115" rx="22" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="600" y="170" text-anchor="middle" class="dark-title">安全边际</text>
+    <text x="435" y="205" class="dark-text">用四毛钱买一块钱的东西</text>
+    <text x="435" y="232" class="small">本质是承认：我可能看错，未来可能出意外</text>
+  </g>
+
+  <!-- Connections -->
+  <path d="M370 225 C455 230 500 280 545 320" class="line"/>
+  <path d="M830 225 C745 230 700 280 655 320" class="line"/>
+  <path d="M370 610 C455 590 500 535 545 490" class="line"/>
+  <path d="M830 610 C745 590 700 535 655 490" class="line"/>
+  <path d="M600 250 L600 285" class="line"/>
+  <path d="M600 521 L600 650" class="line"/>
+
+  <!-- Cycle curve -->
+  <path d="M455 405 C500 315 700 315 745 405 C700 495 500 495 455 405" class="dash"/>
+  <text x="600" y="300" text-anchor="middle" class="small">价格围绕价值波动</text>
+  <text x="600" y="530" text-anchor="middle" class="small">情绪越极端，机会/风险越极端</text>
+
+  <!-- Left bottom checklist -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="350" width="260" height="120" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="200" y="382" text-anchor="middle" class="dark-title">买入前四问</text>
+    <text x="95" y="412" class="dark-text">1. 看懂生意了吗？</text>
+    <text x="95" y="438" class="dark-text">2. 价格足够便宜吗？</text>
+    <text x="95" y="464" class="dark-text">3. 是否被情绪裹挟？</text>
+  </g>
+
+  <!-- Right bottom checklist -->
+  <g filter="url(#shadow)">
+    <rect x="870" y="350" width="260" height="120" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="1000" y="382" text-anchor="middle" class="dark-title">防守三不做</text>
+    <text x="895" y="412" class="dark-text">1. 不买高估热门股</text>
+    <text x="895" y="438" class="dark-text">2. 不借钱炒股</text>
+    <text x="895" y="464" class="dark-text">3. 不懂不碰</text>
+  </g>
+
+  <!-- Warning and opportunity tags -->
+  <g>
+    <rect x="415" y="310" width="130" height="34" rx="17" fill="#DC2626"/>
+    <text x="480" y="333" text-anchor="middle" class="tag">贪婪时警惕</text>
+
+    <rect x="655" y="310" width="130" height="34" rx="17" fill="#16A34A"/>
+    <text x="720" y="333" text-anchor="middle" class="tag">恐惧时研究</text>
+
+    <rect x="418" y="470" width="135" height="34" rx="17" fill="#2563EB"/>
+    <text x="485" y="493" text-anchor="middle" class="tag">便宜才是硬道理</text>
+
+    <rect x="650" y="470" width="135" height="34" rx="17" fill="#7C3AED"/>
+    <text x="718" y="493" text-anchor="middle" class="tag">慢慢变富</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="600" y="800" text-anchor="middle" class="subtitle">
+    投资不是预测明天，而是在不确定中用价值、价格和安全边际做理性决策
+  </text>
+</svg>
