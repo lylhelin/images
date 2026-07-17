@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 820" font-family="'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="900" height="820" fill="#ffffff"/>
+
+  <!-- ============== 节点 01: 线上 Bug 描述 ============== -->
+  <g>
+    <rect x="280" y="55" width="340" height="50" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="305" cy="80" r="11" fill="#1f2937"/>
+    <text x="305" y="84" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">01</text>
+    <text x="328" y="86" font-size="14" font-weight="500" fill="#111827">线上 Bug 描述</text>
+  </g>
+  <line x1="450" y1="105" x2="450" y2="130" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== 节点 02: AI 根据现象猜根因 ============== -->
+  <g>
+    <rect x="280" y="130" width="340" height="50" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="305" cy="155" r="11" fill="#1f2937"/>
+    <text x="305" y="159" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">02</text>
+    <text x="328" y="161" font-size="14" font-weight="500" fill="#111827">AI 根据现象猜根因</text>
+  </g>
+  <!-- 标签: 根因假设 ≠ 事实 -->
+  <g>
+    <rect x="640" y="142" width="130" height="30" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+    <circle cx="654" cy="157" r="2.8" fill="#4b5563"/>
+    <text x="664" y="161" font-size="11" fill="#4b5563">根因假设 ≠ 事实</text>
+  </g>
+  <line x1="450" y1="180" x2="450" y2="205" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== 节点 03: 直接修改退款逻辑 ============== -->
+  <g>
+    <rect x="280" y="205" width="340" height="50" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="305" cy="230" r="11" fill="#1f2937"/>
+    <text x="305" y="234" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">03</text>
+    <text x="328" y="236" font-size="14" font-weight="500" fill="#111827">直接修改退款逻辑</text>
+  </g>
+  <line x1="450" y1="255" x2="450" y2="280" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== 节点 04: 测试不通过 (开始变宽) ============== -->
+  <g>
+    <rect x="250" y="280" width="400" height="50" rx="8" fill="#fafafa" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="278" cy="305" r="11" fill="#1f2937"/>
+    <text x="278" y="309" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">04</text>
+    <text x="300" y="311" font-size="14" font-weight="500" fill="#111827">测试不通过</text>
+  </g>
+  <line x1="450" y1="330" x2="450" y2="360" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== 节点 05: 继续修改计价逻辑 ============== -->
+  <g>
+    <rect x="220" y="360" width="460" height="50" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="248" cy="385" r="11" fill="#1f2937"/>
+    <text x="248" y="389" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">05</text>
+    <text x="270" y="391" font-size="14" font-weight="500" fill="#111827">继续修改计价逻辑</text>
+  </g>
+  <line x1="450" y1="410" x2="450" y2="440" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== 节点 06: 又修改优惠分摊逻辑 ============== -->
+  <g>
+    <rect x="190" y="440" width="520" height="50" rx="8" fill="#e5e7eb" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="218" cy="465" r="11" fill="#1f2937"/>
+    <text x="218" y="469" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">06</text>
+    <text x="240" y="471" font-size="14" font-weight="500" fill="#111827">又修改优惠分摊逻辑</text>
+  </g>
+  <line x1="450" y1="490" x2="450" y2="520" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== 节点 07: 改动范围越来越大 ============== -->
+  <g>
+    <rect x="160" y="520" width="580" height="55" rx="8" fill="#d1d5db" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="188" cy="547" r="11" fill="#1f2937"/>
+    <text x="188" y="551" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">07</text>
+    <text x="210" y="549" font-size="14" font-weight="500" fill="#111827">改动范围越来越大</text>
+  </g>
+  <line x1="450" y1="575" x2="450" y2="605" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== 节点 08: 风险收口 (深色反白) ============== -->
+  <g>
+    <rect x="160" y="605" width="580" height="85" rx="10" fill="#1f2937" stroke="#1f2937" stroke-width="2.5"/>
+    <g transform="translate(193, 645)">
+      <polygon points="0,-14 16,14 -16,14" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linejoin="round"/>
+      <line x1="0" y1="-3" x2="0" y2="5" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="0" cy="10" r="1.4" fill="#fbbf24"/>
+    </g>
+    <text x="222" y="641" font-size="11" font-weight="700" fill="#9ca3af" letter-spacing="0.5">08</text>
+    <text x="222" y="666" font-size="16" font-weight="600" fill="#ffffff">原问题未必解决，新风险不断增加</text>
+  </g>
+
+  <!-- ============== 底部强调 ============== -->
+  <line x1="180" y1="725" x2="720" y2="725" stroke="#d1d5db" stroke-width="1"/>
+  <text x="450" y="765" text-anchor="middle" font-size="18" fill="#1f2937">
+    <tspan>没有失败用例，就没有</tspan>
+    <tspan font-weight="700">修复资格</tspan>
+    <tspan>。</tspan>
+  </text>
+</svg>

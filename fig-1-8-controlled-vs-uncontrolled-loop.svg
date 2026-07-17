@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" font-family="'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/>
+    </marker>
+    <marker id="arrowDashed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1100" height="700" fill="#ffffff"/>
+
+  <!-- ============== 中间分隔虚线 ============== -->
+  <line x1="555" y1="40" x2="555" y2="640" stroke="#d1d5db" stroke-width="1" stroke-dasharray="3 4"/>
+
+  <!-- ====================================================== -->
+  <!-- 左侧：不受控 Loop (错位、混乱、回环) -->
+  <!-- ====================================================== -->
+  <g>
+    <text x="60" y="55" font-size="20" font-weight="700" fill="#1f2937">不受控 Loop</text>
+    <text x="60" y="75" font-size="12" fill="#6b7280">无边界 · 无验证 · 无停止条件</text>
+
+    <!-- 节点 1: 修改代码 -->
+    <g>
+      <rect x="55" y="110" width="120" height="40" rx="6" fill="#fafafa" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="115" y="134" text-anchor="middle" font-size="13" fill="#111827">修改代码</text>
+    </g>
+    <!-- 节点 2: 测试失败 -->
+    <g>
+      <rect x="240" y="165" width="120" height="40" rx="6" fill="#fafafa" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="300" y="189" text-anchor="middle" font-size="13" fill="#111827">测试失败</text>
+    </g>
+    <!-- 节点 3: 再改 -->
+    <g>
+      <rect x="100" y="225" width="100" height="40" rx="6" fill="#fafafa" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="150" y="249" text-anchor="middle" font-size="13" fill="#111827">再改</text>
+    </g>
+    <!-- 节点 4: 再失败 -->
+    <g>
+      <rect x="265" y="285" width="120" height="40" rx="6" fill="#fafafa" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="325" y="309" text-anchor="middle" font-size="13" fill="#111827">再失败</text>
+    </g>
+    <!-- 节点 5: 继续改 -->
+    <g>
+      <rect x="80" y="345" width="110" height="40" rx="6" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="135" y="369" text-anchor="middle" font-size="13" fill="#111827">继续改</text>
+    </g>
+    <!-- 节点 6: 范围扩大 -->
+    <g>
+      <rect x="220" y="410" width="140" height="40" rx="6" fill="#e5e7eb" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="290" y="434" text-anchor="middle" font-size="13" fill="#111827">范围扩大</text>
+    </g>
+    <!-- 节点 7: 风险失控 (深色) -->
+    <g>
+      <rect x="140" y="495" width="200" height="55" rx="8" fill="#1f2937" stroke="#1f2937" stroke-width="2.5"/>
+      <g transform="translate(165, 522)">
+        <polygon points="0,-12 14,12 -14,12" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="0" y1="-2" x2="0" y2="4" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="0" cy="8" r="1.4" fill="#fbbf24"/>
+      </g>
+      <text x="195" y="528" font-size="15" font-weight="600" fill="#ffffff">风险失控</text>
+    </g>
+
+    <!-- 弯曲回环箭头 -->
+    <path d="M 175 130 Q 220 145 240 185" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 240 205 Q 210 220 200 225" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 200 265 Q 230 275 265 305" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 265 325 Q 200 335 190 345" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 190 385 Q 210 400 220 430" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 290 450 Q 280 475 240 495" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 左侧底部小字 -->
+    <text x="230" y="580" text-anchor="middle" font-size="11" fill="#9ca3af" font-style="italic">反复试错 · 无停止 · 无边界</text>
+  </g>
+
+  <!-- ====================================================== -->
+  <!-- 右侧：受控 Loop -->
+  <!-- ====================================================== -->
+  <g>
+    <text x="620" y="55" font-size="20" font-weight="700" fill="#1f2937">受控 Loop</text>
+    <text x="620" y="75" font-size="12" fill="#6b7280">有边界 · 有验证 · 有停止条件</text>
+
+    <!-- 节点 1: 计划修改 -->
+    <g>
+      <rect x="640" y="110" width="200" height="48" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="740" y="139" text-anchor="middle" font-size="14" font-weight="500" fill="#111827">计划修改</text>
+    </g>
+    <line x1="740" y1="158" x2="740" y2="188" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 节点 2: 执行最小变更 -->
+    <g>
+      <rect x="640" y="190" width="200" height="48" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="740" y="219" text-anchor="middle" font-size="14" font-weight="500" fill="#111827">执行最小变更</text>
+    </g>
+    <line x1="740" y1="238" x2="740" y2="268" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 节点 3: 运行指定测试 -->
+    <g>
+      <rect x="640" y="270" width="200" height="48" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="740" y="299" text-anchor="middle" font-size="14" font-weight="500" fill="#111827">运行指定测试</text>
+    </g>
+    <line x1="740" y1="318" x2="740" y2="348" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 节点 4: 观察失败原因 -->
+    <g>
+      <rect x="640" y="350" width="200" height="48" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="740" y="379" text-anchor="middle" font-size="14" font-weight="500" fill="#111827">观察失败原因</text>
+    </g>
+    <line x1="740" y1="398" x2="740" y2="428" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 节点 5: 判断节点 (菱形) -->
+    <g>
+      <polygon points="740,430 830,480 740,530 650,480" fill="#ffffff" stroke="#1f2937" stroke-width="1.8"/>
+      <text x="740" y="475" text-anchor="middle" font-size="12" font-weight="500" fill="#111827">是否在允许</text>
+      <text x="740" y="492" text-anchor="middle" font-size="12" font-weight="500" fill="#111827">范围内修正</text>
+    </g>
+
+    <!-- 是 → 重试 N 次 → 回到节点 2 -->
+    <text x="858" y="468" font-size="12" font-weight="700" fill="#1f2937">是</text>
+    <path d="M 830 480 L 870 480" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="880" y="475" font-size="11" font-weight="600" fill="#1f2937">最多重试 N 次</text>
+    <text x="880" y="490" font-size="10" fill="#6b7280">(超过即停)</text>
+    <path d="M 880 498 Q 920 498 920 470 Q 920 230 840 230" fill="none" stroke="#6b7280" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arrowDashed)"/>
+
+    <!-- 否 → 转人工 -->
+    <text x="615" y="468" font-size="12" font-weight="700" fill="#1f2937">否</text>
+    <path d="M 650 480 L 610 480" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="540" y="475" font-size="11" font-weight="600" fill="#1f2937">停止并转人工</text>
+    <text x="540" y="490" font-size="10" fill="#6b7280">(高风险触发)</text>
+    <path d="M 575 498 L 575 580" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 575 580 L 640 580" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 节点 6: 输出 Loop Summary -->
+    <g>
+      <rect x="640" y="556" width="200" height="48" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+      <text x="740" y="585" text-anchor="middle" font-size="14" font-weight="600" fill="#111827">输出 Loop Summary</text>
+    </g>
+
+    <!-- 5 个约束标签（右侧一列） -->
+    <g>
+      <!-- 执行轨迹记录 -->
+      <g>
+        <rect x="980" y="118" width="115" height="30" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+        <circle cx="994" cy="133" r="2.8" fill="#4b5563"/>
+        <text x="1004" y="137" font-size="11" fill="#4b5563">执行轨迹记录</text>
+      </g>
+      <!-- 修改范围限制 -->
+      <g>
+        <rect x="980" y="200" width="115" height="30" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+        <circle cx="994" cy="215" r="2.8" fill="#4b5563"/>
+        <text x="1004" y="219" font-size="11" fill="#4b5563">修改范围限制</text>
+      </g>
+      <!-- 最大重试次数 -->
+      <g>
+        <rect x="980" y="280" width="115" height="30" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+        <circle cx="994" cy="295" r="2.8" fill="#4b5563"/>
+        <text x="1004" y="299" font-size="11" fill="#4b5563">最大重试次数</text>
+      </g>
+      <!-- 高风险触发停止 -->
+      <g>
+        <rect x="980" y="360" width="115" height="30" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+        <circle cx="994" cy="375" r="2.8" fill="#4b5563"/>
+        <text x="1004" y="379" font-size="11" fill="#4b5563">高风险触发停止</text>
+      </g>
+      <!-- 人工接管路径 -->
+      <g>
+        <rect x="980" y="460" width="115" height="30" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+        <circle cx="994" cy="475" r="2.8" fill="#4b5563"/>
+        <text x="1004" y="479" font-size="11" fill="#4b5563">人工接管路径</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============== 底部强调 ============== -->
+  <line x1="100" y1="645" x2="1000" y2="645" stroke="#d1d5db" stroke-width="1"/>
+  <text x="550" y="678" text-anchor="middle" font-size="16" fill="#1f2937">
+    <tspan font-weight="600">Loop Engineering</tspan>
+    <tspan> 不是一直试到成功，而是</tspan>
+    <tspan font-weight="700">有验证、有边界、有停止条件。</tspan>
+  </text>
+</svg>

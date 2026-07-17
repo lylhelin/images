@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <!-- 画布背景 -->
+  <rect width="900" height="620" fill="#ffffff"/>
+
+  <!-- ============== 主流程（左侧纵向链路） ============== -->
+
+  <!-- 节点 01: 原始金额 -->
+  <g>
+    <rect x="80" y="55" width="280" height="55" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="108" cy="82" r="13" fill="#1f2937"/>
+    <text x="108" y="86" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">01</text>
+    <text x="138" y="88" font-size="16" font-weight="500" fill="#111827">原始金额</text>
+  </g>
+  <line x1="220" y1="110" x2="220" y2="142" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 节点 02: 应用品类券 -->
+  <g>
+    <rect x="80" y="145" width="280" height="55" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="108" cy="172" r="13" fill="#1f2937"/>
+    <text x="108" y="176" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">02</text>
+    <text x="138" y="178" font-size="16" font-weight="500" fill="#111827">应用品类券</text>
+  </g>
+  <line x1="220" y1="200" x2="220" y2="232" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 节点 03: 应用满减券 -->
+  <g>
+    <rect x="80" y="235" width="280" height="55" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="108" cy="262" r="13" fill="#1f2937"/>
+    <text x="108" y="266" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">03</text>
+    <text x="138" y="268" font-size="16" font-weight="500" fill="#111827">应用满减券</text>
+  </g>
+  <line x1="220" y1="290" x2="220" y2="322" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 节点 04: 应用新人券 -->
+  <g>
+    <rect x="80" y="325" width="280" height="55" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="108" cy="352" r="13" fill="#1f2937"/>
+    <text x="108" y="356" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">04</text>
+    <text x="138" y="358" font-size="16" font-weight="500" fill="#111827">应用新人券</text>
+  </g>
+  <line x1="220" y1="380" x2="220" y2="412" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 节点 05: 最终应付金额 -->
+  <g>
+    <rect x="80" y="415" width="280" height="55" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="108" cy="442" r="13" fill="#1f2937"/>
+    <text x="108" y="446" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">05</text>
+    <text x="138" y="448" font-size="16" font-weight="500" fill="#111827">得到最终应付金额</text>
+  </g>
+
+  <!-- 节点之间的虚线连接（右侧提示框与左侧节点的隐式关联） -->
+  <g stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3" fill="none">
+    <line x1="360" y1="172" x2="420" y2="150"/>
+    <line x1="360" y1="262" x2="420" y2="210"/>
+    <line x1="360" y1="352" x2="420" y2="270"/>
+    <line x1="360" y1="442" x2="420" y2="330"/>
+  </g>
+
+  <!-- ============== 右侧隐藏假设框（虚线） ============== -->
+  <g>
+    <rect x="420" y="55" width="410" height="415" rx="10" fill="#fafafa" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="448" y="85" font-size="16" font-weight="600" fill="#111827">隐藏的业务假设</text>
+    <text x="448" y="106" font-size="11" fill="#9ca3af" font-style="italic">AI 默认推断 · 未与业务方确认</text>
+
+    <line x1="448" y1="118" x2="802" y2="118" stroke="#e5e7eb" stroke-width="1"/>
+
+    <!-- 条目 -->
+    <g>
+      <circle cx="458" cy="150" r="3.5" fill="#4b5563"/>
+      <text x="475" y="155" font-size="13" fill="#374151">三类券可以无条件叠加</text>
+    </g>
+    <g>
+      <circle cx="458" cy="200" r="3.5" fill="#4b5563"/>
+      <text x="475" y="205" font-size="13" fill="#374151">满减券门槛计算方式已确定</text>
+    </g>
+    <g>
+      <circle cx="458" cy="250" r="3.5" fill="#4b5563"/>
+      <text x="475" y="255" font-size="13" fill="#374151">新人券可与满减券同时使用</text>
+    </g>
+    <g>
+      <circle cx="458" cy="300" r="3.5" fill="#4b5563"/>
+      <text x="475" y="305" font-size="13" fill="#374151">无需比较互斥方案</text>
+    </g>
+    <g>
+      <circle cx="458" cy="350" r="3.5" fill="#4b5563"/>
+      <text x="475" y="355" font-size="13" fill="#374151">退款时无需依赖计价快照</text>
+    </g>
+  </g>
+
+  <!-- ============== 底部警示条 ============== -->
+  <g>
+    <rect x="70" y="500" width="760" height="78" rx="8" fill="#f3f4f6" stroke="#1f2937" stroke-width="1.5"/>
+    <!-- 警示图标 -->
+    <g transform="translate(100, 540)">
+      <polygon points="0,-14 16,12 -16,12" fill="none" stroke="#1f2937" stroke-width="1.8" stroke-linejoin="round"/>
+      <line x1="0" y1="-4" x2="0" y2="3" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="0" cy="7.5" r="1.4" fill="#1f2937"/>
+    </g>
+    <text x="138" y="535" font-size="15" font-weight="700" fill="#1f2937">问题</text>
+    <text x="138" y="560" font-size="14" fill="#1f2937">AI 推断出的流程看起来合理，但可能并不等于真实业务规则。</text>
+  </g>
+</svg>
