@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" font-family="'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1000" height="650" fill="#ffffff"/>
+
+  <!-- ============== L1: 个人 Prompt ============== -->
+  <g>
+    <rect x="350" y="30" width="300" height="45" rx="8" fill="#fafafa" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="372" cy="52" r="11" fill="#1f2937"/>
+    <text x="372" y="56" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">L1</text>
+    <text x="395" y="58" font-size="14" font-weight="500" fill="#111827">个人 Prompt</text>
+  </g>
+  <text x="500" y="92" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic">个人经验 · 难以复用</text>
+  <line x1="500" y1="100" x2="500" y2="118" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== L2: 可复用 Skill ============== -->
+  <g>
+    <rect x="325" y="120" width="350" height="48" rx="8" fill="#fafafa" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="348" cy="144" r="11" fill="#1f2937"/>
+    <text x="348" y="148" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">L2</text>
+    <text x="371" y="150" font-size="14" font-weight="500" fill="#111827">可复用 Skill</text>
+  </g>
+  <text x="500" y="186" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic">结构化能力单元</text>
+  <line x1="500" y1="194" x2="500" y2="212" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== L3: 标准 Workflow ============== -->
+  <g>
+    <rect x="300" y="215" width="400" height="52" rx="9" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="324" cy="241" r="11" fill="#1f2937"/>
+    <text x="324" y="245" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">L3</text>
+    <text x="348" y="247" font-size="15" font-weight="500" fill="#111827">标准 Workflow</text>
+  </g>
+  <text x="500" y="285" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic">多个 Skill 与工具协同</text>
+  <line x1="500" y1="293" x2="500" y2="311" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== L4: 团队规则库 ============== -->
+  <g>
+    <rect x="275" y="315" width="450" height="56" rx="9" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <circle cx="300" cy="343" r="12" fill="#1f2937"/>
+    <text x="300" y="347" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">L4</text>
+    <text x="326" y="349" font-size="15" font-weight="500" fill="#111827">团队规则库</text>
+  </g>
+  <text x="500" y="390" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic">沉淀约束和经验</text>
+  <line x1="500" y1="398" x2="500" y2="416" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== L5: 评测集与门禁 ============== -->
+  <g>
+    <rect x="250" y="420" width="500" height="60" rx="10" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="277" cy="450" r="12" fill="#1f2937"/>
+    <text x="277" y="454" text-anchor="middle" font-size="10" font-weight="700" fill="#ffffff">L5</text>
+    <text x="303" y="456" font-size="15" font-weight="600" fill="#111827">评测集与门禁</text>
+  </g>
+  <text x="500" y="500" text-anchor="middle" font-size="11" fill="#6b7280" font-style="italic">可验证 · 可治理</text>
+  <line x1="500" y1="508" x2="500" y2="526" stroke="#1f2937" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ============== L6: AI 研发操作系统 [深色反白 · 最突出] ============== -->
+  <g>
+    <rect x="200" y="530" width="600" height="78" rx="12" fill="#1f2937" stroke="#1f2937" stroke-width="3"/>
+    <text x="500" y="560" text-anchor="middle" font-size="11" font-weight="700" fill="#9ca3af" letter-spacing="2">L6 · AI ENGINEERING OS</text>
+    <text x="500" y="588" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">AI 研发操作系统</text>
+    <text x="500" y="602" text-anchor="middle" font-size="11" fill="#cbd5e1" font-style="italic">团队级持续能力</text>
+  </g>
+
+  <!-- ============== 底部强调 ============== -->
+  <line x1="180" y1="622" x2="820" y2="622" stroke="#d1d5db" stroke-width="1"/>
+  <text x="500" y="643" text-anchor="middle" font-size="16" fill="#1f2937">
+    <tspan font-weight="700">团队体系</tspan>
+    <tspan> 胜过 </tspan>
+    <tspan font-weight="700">个人技巧</tspan>
+    <tspan>。</tspan>
+  </text>
+</svg>
